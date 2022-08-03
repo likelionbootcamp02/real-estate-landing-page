@@ -1,7 +1,9 @@
 /* ***************** */
 /* RESET CSS */
 /* ***************** */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +16,7 @@ body {
   line-height: calc(26 / 16);
 
   color: var(--gray-200);
-  background-color: var(--black);
+  background-color: var(--black-300);
 }
 
 a {
@@ -46,6 +48,10 @@ input {
   font: inherit;
 }
 
+ion-icon {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -60,7 +66,7 @@ h6 {
 /* REUSABLE ELEMENTS */
 /* ***************** */
 .heading-primary {
-  font-size: 66px;
+  font-size: clamp(44px, calc(36px + 2.1vw), 66px);
   font-weight: 700;
   line-height: calc(76 / 66);
   text-transform: capitalize;
@@ -78,4 +84,28 @@ h6 {
   font-weight: 500;
   line-height: 1;
   color: var(--green);
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box::after {
+  --box-spacing: 20px;
+
+  content: "";
+  position: absolute;
+  top: calc((-1) * var(--box-spacing));
+  left: calc((-1) * var(--box-spacing));
+  z-index: -1;
+
+  width: calc(100% + var(--box-spacing) * 2);
+  height: calc(100% + var(--box-spacing) * 2);
+
+  background-color: #353536;
+  border-radius: calc(var(--box-spacing) + var(--border-radius-md));
+}
+
+.img-box > img {
+  border-radius: var(--border-radius-md);
 }
