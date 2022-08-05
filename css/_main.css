@@ -154,3 +154,38 @@
 .hero-rate-text {
   line-height: 1;
 }
+
+/* ***************** */
+/* FEATURES */
+/* ***************** */
+.feature-wrapper {
+  position: relative;
+  padding-bottom: 90px;
+}
+.feature-heading-box {
+  margin-bottom: 48px;
+}
+
+.feature-heading-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-explore-link {
+  display: none;
+}
+
+.feature-intersect-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 326px;
+  background-color: var(--black-200);
+}
+
+.feature-intersect-img {
+  height: 100%;
+}
