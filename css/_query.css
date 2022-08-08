@@ -80,4 +80,16 @@
     display: inline-block;
     margin-top: 54px;
   }
+
+  /* ***************** */
+  /* WCU */
+  /* ***************** */
+  .services > .container > .grid,
+  .wcu > .container > .grid {
+    gap: 68px;
+  }
+
+  .service-text-container {
+    grid-row: 1;
+  }
 }

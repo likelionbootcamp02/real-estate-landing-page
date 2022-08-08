@@ -189,3 +189,135 @@
 .feature-intersect-img {
   height: 100%;
 }
+
+/* ***************** */
+/* SERVICES */
+/* ***************** */
+.service-text-wrapper,
+.wcu-text-wrapper {
+  max-width: 470px;
+}
+
+.service-text-box,
+.wcu-text-box {
+  margin-bottom: 40px;
+}
+
+.service-text-box > .heading-secondary,
+.wcu-text-box > .heading-secondary {
+  margin-bottom: 20px;
+}
+
+.service-feature-list.grid--2-cols {
+  --grid-col: 2;
+  max-width: 400px;
+}
+
+.service-feature-item,
+.wcu-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white);
+}
+
+.service-feature-item > svg,
+.wcu-feature-item > svg {
+  min-width: 22px;
+}
+
+/* ***************** */
+/* WCU */
+/* ***************** */
+.wcu-img-container {
+  position: relative;
+}
+
+.employee-box {
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 30px;
+
+  display: flex;
+  justify-items: center;
+  gap: 33px;
+  background: linear-gradient(
+    125.01deg,
+    rgba(0, 0, 0, 0.45) 29.4%,
+    rgba(0, 0, 0, 0) 97.93%
+  );
+  filter: drop-shadow(10px 14px 74px rgba(2, 92, 138, 0.27));
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 22px;
+  white-space: nowrap;
+}
+
+.employee-rate {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  line-height: calc(18 / 16);
+  color: var(--white);
+
+  opacity: 0.8;
+}
+
+.employee-rate ion-icon {
+  font-size: 24px;
+}
+
+.employee-rate > span {
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  font-weight: 500;
+}
+
+.employee-title {
+  font-size: 34px;
+  line-height: calc(38 / 34);
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.employee-img-box {
+  display: flex;
+  align-items: center;
+}
+
+.employee-img {
+  width: 64px;
+  border: 3px solid #ffffff;
+  box-shadow: -9px 2px 24px -5px rgba(0, 0, 0, 0.38);
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.employee-img:not(:first-child) {
+  margin-left: -27px;
+}
+
+.wcu-text-container {
+  grid-row: 1;
+}
+
+.wcu-img-box {
+  --border-radius-top-left: 50%;
+}
+
+.wcu-img-box::after {
+  border-top-left-radius: var(--border-radius-top-left);
+}
+
+.wcu-img-box > img {
+  border-top-left-radius: var(--border-radius-top-left);
+}
