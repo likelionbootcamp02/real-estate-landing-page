@@ -166,7 +166,8 @@
   margin-bottom: 48px;
 }
 
-.feature-heading-flex {
+.feature-heading-flex,
+.blog-heading-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -320,4 +321,19 @@
 
 .wcu-img-box > img {
   border-top-left-radius: var(--border-radius-top-left);
+}
+
+/* ***************** */
+/* BLOG */
+/* ***************** */
+.blog-heading-box {
+  margin-bottom: 64px;
+}
+
+.blog-heading-box .heading-secondary {
+  max-width: 620px;
+}
+
+.blog-img-box {
+  display: flex;
 }

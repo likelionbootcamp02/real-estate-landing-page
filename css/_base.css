@@ -17,6 +17,8 @@ body {
 
   color: var(--gray-200);
   background-color: var(--black-300);
+
+  overflow-x: hidden;
 }
 
 section:not(:last-child) {
