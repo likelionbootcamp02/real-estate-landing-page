@@ -93,3 +93,20 @@
     grid-row: 1;
   }
 }
+
+@media (max-width: 600px) {
+  /* ***************** */
+  /* CAROUSEL */
+  /* ***************** */
+  .carousel-inner {
+    --carousel-col: 1;
+  }
+  
+  .carousel-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-item {
+    flex-basis: 90%;
+  }
+}

@@ -35,15 +35,16 @@
 /* CARD */
 /* ***************** */
 .card {
+  --card-bg: var(--black-300);
   border-radius: var(--border-radius-md);
   overflow: hidden;
+  background-color: var(--card-bg);
 }
 
 .card-body {
   font-size: 14px;
   line-height: 1;
   padding: 19px 26px 24px;
-  background-color: var(--black-300);
 }
 
 .card-title {
@@ -85,16 +86,33 @@
 .carousel-inner {
   --carousel-col: 3;
   --carousel-gap: 30px;
+  --carousel-item-width: calc(
+    (100% - (var(--carousel-col) - 1) * var(--carousel-gap)) /
+      var(--carousel-col)
+  );
+  --carousel-scale: 1.1;
   display: flex;
+  align-items: center;
   gap: var(--carousel-gap);
+  overflow-x: scroll;
+  padding: calc(var(--carousel-item-width) * (var(--carousel-scale) - 1)) 0;
+}
+
+.carousel-inner::-webkit-scrollbar {
+  background-color: red;
+}
+
+.carousel-inner::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.carousel-inner::-webkit-scrollbar-thumb {
+  background: #888;
 }
 
 .carousel-item {
   position: relative;
-  flex-basis: calc(
-    (100% - (var(--carousel-col) - 1) * var(--carousel-gap)) /
-      var(--carousel-col)
-  );
+  flex-basis: var(--carousel-item-width);
   flex-shrink: 0;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius-lg);
@@ -110,7 +128,7 @@
 }
 
 .carousel-item:hover {
-  transform: scaleY(1.1);
+  transform: scaleY(var(--carousel-scale));
 }
 
 .carousel-controls {
