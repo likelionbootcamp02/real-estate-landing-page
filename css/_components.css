@@ -98,18 +98,6 @@
   padding: calc(var(--carousel-item-width) * (var(--carousel-scale) - 1)) 0;
 }
 
-.carousel-inner::-webkit-scrollbar {
-  background-color: red;
-}
-
-.carousel-inner::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.carousel-inner::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
 .carousel-item {
   position: relative;
   flex-basis: var(--carousel-item-width);
