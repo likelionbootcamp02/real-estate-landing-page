@@ -39,28 +39,20 @@
 }
 
 .nav-link {
-  position: relative;
   line-height: 1;
   color: var(--gray-100);
   text-transform: capitalize;
 }
 
-.nav-link::before {
-  content: "";
-  display: block;
-  border-bottom: 1px solid var(--green);
+.nav-link::after {
   width: 0;
-
-  position: absolute;
-  left: 0;
-  bottom: -8px;
 }
 
 .nav-link:hover {
   color: var(--white);
 }
 
-.nav-link:hover::before {
+.nav-link:hover::after {
   width: 100%;
 }
 
@@ -396,4 +388,93 @@
 
 .blog-img-box {
   display: flex;
+}
+
+/* ***************** */
+/* FAQ */
+/* ***************** */
+.faq-text {
+  display: inline-block;
+  max-width: 769px;
+  margin-top: 20px;
+}
+
+/* ***************** */
+/* FOOTER */
+/* ***************** */
+.footer-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.footer-title {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  font-weight: 600;
+}
+
+.footer-title.underline {
+  --underline-height: 2px;
+  --underline-width: 87px;
+}
+
+.footer-nav-item {
+  line-height: 1;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-cta {
+  flex-basis: 426px;
+}
+
+.footer-cta-text {
+  margin-bottom: 30px;
+}
+
+.footer-form {
+  text-align: right;
+}
+
+.footer-form > .btn {
+  --padding-inline: 32px;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 69px;
+}
+
+.footer-action-link ion-icon {
+  font-size: 24px;
+}
+
+.footer-desc {
+  max-width: 603px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+}
+
+.footer-line {
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 0;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 30px;
 }
