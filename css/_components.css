@@ -14,6 +14,10 @@
   border-radius: var(--btn-border-radius);
 }
 
+.btn:hover {
+  background-color: #2e8e66;
+}
+
 .btn-outline {
   --padding-inline: 32px;
   --padding-block: 19px;
